@@ -1,0 +1,17 @@
+# Inserts a blank line between shell prompts
+add_newline = false
+
+[line_break]
+disabled=false
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[container]
+disabled = true
+
+[directory]
+style = 'white'
+truncate_to_repo = false
+truncation_length = 0

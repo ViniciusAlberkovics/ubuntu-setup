@@ -1,5 +1,5 @@
 # Install default programming languages
-languages=$(gum choose "Ruby on Rails" "Node.js" "Go" "PHP" "Python" "Elixir" "Java" --no-limit --selected "Ruby on Rails","Node.js" --height 9 --header "Select programming languages")
+languages=$(gum choose "Ruby" "Node.js" "Go" "PHP" "Python" "Elixir" "Java" --no-limit --selected "Go","Node.js" --height 9 --header "Select programming languages")
 
 for language in $languages; do
 	case $language in
@@ -36,7 +36,7 @@ for language in $languages; do
 done
 
 # Install default databases
-dbs=$(gum choose "MySQL" "Redis" "PostgreSQL" --no-limit --selected "MySQL","Redis" --height 5 --header "Select databases (runs in Docker)")
+dbs=$(gum choose "MySQL" "Redis" "PostgreSQL" "None" --no-limit --selected "MySQL","Redis" --height 5 --header "Select databases (runs in Docker)")
 
 for db in $dbs; do
 	case $db in
@@ -48,6 +48,8 @@ for db in $dbs; do
 		;;
 	PostgreSQL)
 		sudo docker run -d --restart unless-stopped -p "127.0.0.1:5432:5432" --name=postgres16 -e POSTGRES_HOST_AUTH_METHOD=trust postgres:16
+		;;
+	None)
 		;;
 	esac
 done

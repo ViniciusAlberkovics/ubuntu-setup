@@ -61,8 +61,16 @@ gsettings set org.gnome.shell.extensions.space-bar.shortcuts enable-activate-wor
 gsettings set org.gnome.shell.extensions.space-bar.shortcuts enable-move-to-workspace-shortcuts true
 gsettings set org.gnome.shell.extensions.space-bar.shortcuts open-menu "@as []"
 
-# Configure tweaks
+# Configure tweaks -> gsettings list-recursively | grep -e clock -e hint
 gsettings set org.gnome.mutter center-new-windows true
+gsettings set org.gnome.desktop.interface clock-show-date true
+gsettings set org.gnome.desktop.interface clock-show-seconds false
+gsettings set org.gnome.desktop.interface clock-show-weekday true
+gsettings set org.gnome.desktop.interface clock-format '24h'
 
 # Set Cascadia Mono as the default monospace font
-gsettings set org.gnome.desktop.interface monospace-font-name 'CaskaydiaMono Nerd Font 10'
+gsettings set org.gnome.desktop.interface monospace-font-name 'CaskaydiaCove Nerd Font Mono 13'
+gsettings set org.gnome.desktop.wm.preferences titlebar-font 'CaskaydiaCove Nerd Font Mono Bold 11'
+gsettings set org.gnome.desktop.interface font-name 'CaskaydiaCove Nerd Font 12'
+gsettings set org.gnome.desktop.interface document-font-name 'CaskaydiaCove Nerd Font 12'
+gsettings set org.gnome.desktop.interface monospace-font-name 'CaskaydiaCove Nerd Font Mono 13'

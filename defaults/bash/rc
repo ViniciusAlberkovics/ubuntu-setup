@@ -1,4 +1,6 @@
+source ~/.local/share/omakub/defaults/bash/hello
 source ~/.local/share/omakub/defaults/bash/shell
 source ~/.local/share/omakub/defaults/bash/aliases
+source ~/.local/share/omakub/defaults/bash/git-aliases
 source ~/.local/share/omakub/defaults/bash/prompt
 source ~/.local/share/omakub/defaults/bash/init
