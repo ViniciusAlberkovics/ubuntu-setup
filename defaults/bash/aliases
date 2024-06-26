@@ -20,6 +20,7 @@ alias bat='batcat'
 alias lzg='lazygit'
 alias lzd='lazydocker'
 
+alias cls='clear'
 
 # Compression
 compress() { tar -czf "${1%/}.tar.gz" "${1%/}"; }
