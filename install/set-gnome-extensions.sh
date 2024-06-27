@@ -1,10 +1,10 @@
-sudo apt install -y gnome-shell-extension-manager pipx
+sudo apt install -y gnome-shell-extension-manager pipx gnome-weather psensor
 pipx install gnome-extensions-cli --system-site-packages
 
 # Turn off default Ubuntu extensions
 gnome-extensions disable tiling-assistant@ubuntu.com
-gnome-extensions disable ubuntu-appindicators@ubuntu.com
-gnome-extensions disable ubuntu-dock@ubuntu.com
+gnome-extensions enable ubuntu-appindicators@ubuntu.com
+gnome-extensions enable ubuntu-dock@ubuntu.com
 gnome-extensions disable ding@rastersoft.com
 
 # Pause to assure user is ready to accept confirmations
@@ -16,6 +16,7 @@ gext install just-perfection-desktop@just-perfection
 gext install blur-my-shell@aunetx
 gext install space-bar@luchrioh
 gext install undecorate@sun.wxg@gmail.com
+gext install weatheroclock@CleoMenezesJr.github.io
 
 # Compile gsettings schemas in order to be able to set them
 sudo cp ~/.local/share/gnome-shell/extensions/tactile@lundal.io/schemas/org.gnome.shell.extensions.tactile.gschema.xml /usr/share/glib-2.0/schemas/
@@ -74,3 +75,10 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font 'CaskaydiaCove Nerd
 gsettings set org.gnome.desktop.interface font-name 'CaskaydiaCove Nerd Font 12'
 gsettings set org.gnome.desktop.interface document-font-name 'CaskaydiaCove Nerd Font 12'
 gsettings set org.gnome.desktop.interface monospace-font-name 'CaskaydiaCove Nerd Font Mono 13'
+
+# Set alacritty as the default terminal
+gsettings set org.gnome.desktop.default-applications.terminal exec 'alacritty'
+
+# Weather
+gsettings set org.gnome.GWeather temperature-unit 'centigrade'
+source ~/.local/share/omakub/configs/add-location-to-gnome-weather.sh
