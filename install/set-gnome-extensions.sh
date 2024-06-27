@@ -81,4 +81,4 @@ gsettings set org.gnome.desktop.default-applications.terminal exec 'alacritty'
 
 # Weather
 gsettings set org.gnome.GWeather temperature-unit 'centigrade'
-source ~/.local/share/omakub/configs/add-location-to-gnome-weather.sh
+source ~/.local/share/omakub/configs/add-location-to-gnome-weather.sh "Sao Paulo"

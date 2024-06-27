@@ -1,8 +1,8 @@
 # Favorite apps for dock
 apps=(
 	"brave.desktop"
-	"Alacritty.desktop"
 	"code.desktop"
+	"Alacritty.desktop"
 	"WhatsApp.desktop"
 	"Zoom.desktop"
 	"steam.desktop"
@@ -37,3 +37,10 @@ favorites_list="[${favorites_list%,}]"
 
 # Set the favorite apps
 gsettings set org.gnome.shell favorite-apps "$favorites_list"
+
+
+# Configure Dock
+gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM'
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
