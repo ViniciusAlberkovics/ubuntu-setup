@@ -8,6 +8,7 @@ program = "bash"
 padding.x = 16
 padding.y = 14
 opacity = 0.97
+resize_increments = true
 
 [keyboard]
 bindings = [

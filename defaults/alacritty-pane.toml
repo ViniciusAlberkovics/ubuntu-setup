@@ -6,6 +6,7 @@ padding.x = 30
 padding.y = 30
 dimensions.columns = 90
 dimensions.lines = 25
+resize_increments = true
 
 [font]
 size = 10
