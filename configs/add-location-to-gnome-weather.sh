@@ -28,15 +28,15 @@ if [[ $request == "[]" ]]; then
 	exit
 fi
 
-read -p "If this is not the location you wanted, consider adding search terms
-Are you sure you want to add $(echo $request | sed 's/.*"display_name":"//' | sed 's/".*//')? [y/n] : " answer
+# read -p "If this is not the location you wanted, consider adding search terms
+# Are you sure you want to add $(echo $request | sed 's/.*"display_name":"//' | sed 's/".*//')? [y/n] : " answer
 
-if [[ ! $answer == "y" ]]; then
-	echo "Not adding location"
-	exit
-else
-	echo "Adding location"
-fi
+# if [[ ! $answer == "y" ]]; then
+# 	echo "Not adding location"
+# 	exit
+# else
+echo "Adding location $(echo $request | sed 's/.*"display_name":"//' | sed 's/".*//') to GNOME Weather"
+# fi
 
 id=$(echo $request | sed 's/.*"place_id"://' | sed 's/,.*//')
 
