@@ -17,6 +17,7 @@ gext install blur-my-shell@aunetx
 gext install space-bar@luchrioh
 gext install undecorate@sun.wxg@gmail.com
 gext install weatheroclock@CleoMenezesJr.github.io
+gext install clipboard-indicator@tudmotu.com # https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator
 
 # Compile gsettings schemas in order to be able to set them
 sudo cp ~/.local/share/gnome-shell/extensions/tactile@lundal.io/schemas/org.gnome.shell.extensions.tactile.gschema.xml /usr/share/glib-2.0/schemas/
@@ -80,5 +81,19 @@ gsettings set org.gnome.desktop.interface monospace-font-name 'CaskaydiaCove Ner
 gsettings set org.gnome.desktop.default-applications.terminal exec 'alacritty'
 
 # Weather
-gsettings set org.gnome.GWeather temperature-unit 'centigrade'
-source ~/.local/share/omakub/configs/add-location-to-gnome-weather.sh "Sao Paulo"
+{
+    gsettings set org.gnome.GWeather temperature-unit 'centigrade'
+} || {
+    echo "org.gnome.GWeather not installed on gsettings"
+}
+{
+    gsettings set org.gnome.GWeather4 temperature-unit 'centigrade'
+} || {
+    echo "org.gnome.GWeather4 not installed on gsettings"
+}
+
+{
+    source ~/.local/share/omakub/configs/add-location-to-gnome-weather.sh "Sao Paulo"
+} || {
+    echo "Failed to add location to Gnome Weather"
+}
