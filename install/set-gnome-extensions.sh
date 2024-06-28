@@ -1,4 +1,4 @@
-sudo apt install -y gnome-shell-extension-manager pipx gnome-weather psensor
+sudo apt install -y gnome-shell-extension-manager pipx gnome-weather lm-sensors hddtemp psensor
 pipx install gnome-extensions-cli --system-site-packages
 
 # Turn off default Ubuntu extensions
