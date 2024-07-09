@@ -12,3 +12,6 @@ export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/omakub/bin:/usr/local/sbi
 set +h
 
 export OMAKUB_PATH="/home/$USER/.local/share/omakub"
+
+# Auto cd
+shopt -s autocd

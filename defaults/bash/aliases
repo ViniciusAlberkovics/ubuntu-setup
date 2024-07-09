@@ -22,6 +22,8 @@ alias lzd='lazydocker'
 
 alias cls='clear'
 
+alias docker-compose='docker compose'
+
 # Compression
 compress() { tar -czf "${1%/}.tar.gz" "${1%/}"; }
 alias decompress="tar -xzf"
