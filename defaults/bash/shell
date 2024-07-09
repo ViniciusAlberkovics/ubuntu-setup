@@ -15,3 +15,5 @@ export OMAKUB_PATH="/home/$USER/.local/share/omakub"
 
 # Auto cd
 shopt -s autocd
+
+export GPG_TTY=$(tty)
