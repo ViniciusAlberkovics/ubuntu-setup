@@ -3,3 +3,6 @@ source ~/.local/share/omakub/defaults/bash/rc
 # Editor used by CLI
 export EDITOR="nvim"
 export SUDO_EDITOR="nvim"
+
+# Path to custom .desktop entries
+export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share"
