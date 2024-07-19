@@ -11,3 +11,6 @@ Categories=GTK;
 MimeType=text/html;text/xml;application/xhtml_xml;
 StartupNotify=true
 EOF
+
+
+# Change to brave install webapp
