@@ -1,1 +1,1 @@
-flatpak uninstall flathub com.getpostman.Postman
+snap remove postman

@@ -1,1 +1,1 @@
-flatpak install flathub com.getpostman.Postman -y
+sudo snap install postman
