@@ -5,3 +5,6 @@ echo "alias brave='flatpak run com.brave.Browser'" >>~/.local/share/omakub/defau
 
 # register brave as default browser
 xdg-settings set default-web-browser com.brave.Browser.desktop
+
+# allow brave to access home folder
+flatpak override --user --filesystem=home com.brave.Browser
