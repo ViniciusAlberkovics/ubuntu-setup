@@ -2,7 +2,7 @@
 apps=(
 	"brave.desktop"
 	"code.desktop"
-	"Alacritty.desktop"
+	# "Alacritty.desktop"
 	"WhatsApp.desktop"
 	"Zoom.desktop"
 	"steam.desktop"

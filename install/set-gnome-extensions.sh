@@ -77,8 +77,6 @@ gsettings set org.gnome.desktop.interface font-name 'CaskaydiaCove Nerd Font 12'
 gsettings set org.gnome.desktop.interface document-font-name 'CaskaydiaCove Nerd Font 12'
 gsettings set org.gnome.desktop.interface monospace-font-name 'CaskaydiaCove Nerd Font Mono 13'
 
-# Set alacritty as the default terminal
-gsettings set org.gnome.desktop.default-applications.terminal exec 'alacritty'
 
 # Weather
 {

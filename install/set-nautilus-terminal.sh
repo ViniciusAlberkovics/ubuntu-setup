@@ -5,7 +5,7 @@ sudo apt install -y ./nautilus_any_terminal.deb
 rm nautilus_any_terminal.deb
 cd -
 
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal alacritty
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal x-terminal-emulator
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal keybindings '<Ctrl><Alt>t'
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal new-tab true
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal flatpak system
